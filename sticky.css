@@ -1,0 +1,18 @@
+.side1{
+    width: 20%;
+    background: red;
+}
+.side2{
+    width: 80%;
+    height: 3000px;
+    background: grey;
+}
+.container{
+    display: flex;
+}
+.sticky{
+    background: white;
+    padding: 40px;
+    position: sticky;
+    top:50px;
+}
