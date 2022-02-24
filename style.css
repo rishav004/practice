@@ -1,0 +1,25 @@
+#heading{
+    color: black;
+    font-size: 10px;
+    font-family: Roboto;
+}
+
+.mytag{
+    background: red;
+}
+
+#p1{
+    color: blue;
+    margin-bottom: 20px;
+}
+
+#p2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.x {
+    color: blue;
+    padding: 20px 40px 60px 100px;
+}
+
