@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    background: grey;
+    flex-direction: row;
+}
+
+.div1 {
+    height: 200px;
+    flex: 2;
+    background: blue;
+}
+
+.div2 {
+    height: 200px;
+    flex: 1;
+    background: red;
+}
+
+.div3 {
+    height: 200px;
+    flex: 1;
+    background: black;
+}
+
+.div4 {
+    height: 200px;
+    flex: 1;
+    background: green;
+}
+
+.div5 {
+    height: 200px;
+    flex: 1;
+    background: yellow;
+}
+
+.container2 {
+    height: 300px;
+    width: 100%;
+    background: grey;
+    display: flex;
+}
+
+.div11 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: blue;
+    color: white;
+}
+
+.div12 {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1 {
+    background: gold;
+    padding: 20px;
+}
+
+#p2 {
+    background: beige;
+    padding: 20px;
+}
+
+.parent {
+    max-width: 1000px;
+    background: grey;
+    display: flex;
+    border: 1px solid;
+    flex-direction: row;
+    margin: 100px auto;
+}
+
+.imgs {
+    flex: 1
+}
+
+.child {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
