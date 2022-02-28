@@ -1,0 +1,77 @@
+.container {
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: "nav nav nav" "profile info info" "service1 service2 service3" "footer footer footer";
+    grid-gap: 20px;
+}
+
+.header {
+    background: rgb(202, 232, 252);
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    grid-area: nav;
+}
+
+.profileImage {
+    background: grey;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    grid-area: profile;
+}
+
+.Info {
+    background: grey;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    grid-area: info;
+}
+
+.service1 {
+    background: grey;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    grid-area: service1;
+}
+
+.service2 {
+    background: grey;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    grid-area: service2;
+}
+
+.service3 {
+    background: grey;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    grid-area: service3;
+}
+
+.footer {
+    background: rgb(111, 180, 212);
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    grid-area: footer;
+}
