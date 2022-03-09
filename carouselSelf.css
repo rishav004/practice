@@ -1,0 +1,71 @@
+ 
+  body {
+    max-width: 375px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+   
+  .carousel_viewport {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel_slide {
+    padding: 120px; 
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #f99;
+    counter-increment: item;
+  }
+
+  .carousel_slide:nth-child(even){
+      background-color: #99f;
+  }
+
+  .carousel_slide::before{
+      content: counter(item);
+      position: relative;
+      transform: translate3d(-50%,-40%,70px);
+      color: #fff;
+      font-size: 2em;
+  }
+ 
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 37.5%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
